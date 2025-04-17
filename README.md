@@ -1,12 +1,12 @@
-This is a test project implementing infinite scroll product list using Next.js + TanStack Query.
+This is a test project implementing an infinite scroll product list using Next.js and TanStack Query.
 
-Tech stack: Next.js / TanStack Query / Axios / Tailwind / ...
+**Tech stack**: Next.js / TanStack Query / Axios / TailwindCSS / ...
 
 ## Getting Started (two ways)
 
-## Option 1. Using Node Package Manager (requirements: npm or yarn or pnpm)
+## Option 1. Using Node Package Manager (requirement: npm, yarn or pnpm)
 
-First, using npm or yarn or pnpm run this command to install package:
+First, install dependencies:
 
 ```bash
 npm i
@@ -16,7 +16,7 @@ yarn
 pnpm i
 ```
 
-Second, using npm or yarn or pnpm run this command to install package:
+Then, build the project:
 
 ```bash
 npm build
@@ -26,7 +26,7 @@ yarn build
 pnpm build
 ```
 
-Finally, using npm or yarn or pnpm run this command to install package:
+Finally, start the production server:
 
 ```bash
 npm start
@@ -36,7 +36,7 @@ yarn start
 pnpm start
 ```
 
-## Option 2. Using Docker (requirements: docker)
+## Option 2. Using Docker (requirement: Docker)
 
 1. [Install Docker](https://docs.docker.com/get-docker/) on your machine.
 1. Build your container: `docker build -t nextjs-docker .`.
