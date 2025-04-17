@@ -2,7 +2,7 @@ This is a test project implementing an infinite scroll product list using Next.j
 
 **Tech stack**: Next.js / TanStack Query / Axios / TailwindCSS / ...
 
-## Getting Started (two ways)
+## Getting Started (Two Options)
 
 ## Option 1. Using Node Package Manager (requirement: npm, yarn or pnpm)
 
