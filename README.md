@@ -4,6 +4,8 @@ This is a test project implementing an infinite scroll product list using Next.j
 
 ## Getting Started (Two Options)
 
+## ⚠️⚠️⚠️ Note: You need to create a **.env** file in the root directory of the project (same level as package.json) and add the following content for the project to work: NEXT_PUBLIC_API_URL=https://dummyjson.com
+
 ## Option 1. Using Node Package Manager (requirement: npm, yarn or pnpm)
 
 First, install dependencies:
