@@ -16,22 +16,23 @@ const ProductList = ({
   isFetchingNextPage,
   loadMoreTriggerRef,
 }: Props) => {
+  const isFirstLoading = !productInfiniteData && isFetching;
+  const allProducts =
+    productInfiniteData?.pages.flatMap((page) => page.products) || [];
+
   return (
-    <React.Fragment>
+    <>
       <div className="grid gap-2 gap-y-4 md:gap-5 grid-cols-2 md:grid-cols-3">
-        {!productInfiniteData && isFetching && <SkeletonProducts />}
-        {productInfiniteData &&
-          productInfiniteData.pages.map((group, i) => (
-            <React.Fragment key={i}>
-              {group.products.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </React.Fragment>
-          ))}
+        {isFirstLoading && <SkeletonProducts />}
+
+        {allProducts.map((product) => (
+          <ProductCard key={product.id} product={product} />
+        ))}
+
         {isFetchingNextPage && <SkeletonProducts />}
       </div>
       <div ref={loadMoreTriggerRef} className="h-10" />
-    </React.Fragment>
+    </>
   );
 };
 
